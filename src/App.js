@@ -97,15 +97,15 @@ export default function App() {
       <h1>Tagesgehalt Rechner</h1>
       <p>
         Monatliches Gehalt: €
-        <input type="number" value={salary} onChange={e => setSalary(e.target.value)} />
+        <input type="number" value={salary} defaultValue={3293} onChange={e => setSalary(e.target.value)} />
       </p>
       <p>
         Monatliche Fixkosten: €
-        <input type="number" value={fixedCosts} onChange={e => setFixedCosts(e.target.value)} />
+        <input type="number" value={fixedCosts} defaultValue={1620} onChange={e => setFixedCosts(e.target.value)} />
       </p>
       <p>
         Tage bis nächstes Gehalt:
-        <input type="number" value={daySalary} onChange={e => setDaysSalary(e.target.value)} />
+        <input type="number" value={daySalary} defaultValue={30} onChange={e => setDaysSalary(e.target.value)} />
       </p>
       <button onClick={calculateBudget}>Verbleibendes Gehalt berechnen</button>
       <p>
