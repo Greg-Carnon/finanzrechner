@@ -46,16 +46,26 @@ export default function App() {
 
 
 // Function to calculate left Day One and daily Budget Day Two
-    function calculateleftdayOne(){
+function calculateleftdayOne(){
+  // calculate left day one as separate variable that not two renderings are needed
+  const dayLeft = dailyBudget - spendingsDayOne;
 
-      setLeftDayOne(dailyBudget - spendingsDayOne);
+    // use variable
+    setLeftDayOne(dayLeft);
 
-      if (leftdayOne < 0) {
-        setDailyBudgetDayTwo(dailyBudget + leftdayOne);
-      } else {
-        setSavings(leftdayOne + leftdayTwo + leftdayThree + leftdayFour + leftdayFive + leftdaySix + leftdaySeven);
-      };
-    }
+    // if you would use the variable leftdayOne here. You would get the previous state of the variable,
+    // because the state update from setLeftDayOne is not finished yet and needs a re-rending.
+    // That's the reason why it's better to move the calculation into a separate variable and use this
+    // instead of the state variable.
+  if (dayLeft < 0) {
+    // use variable
+    setDailyBudgetDayTwo(dailyBudget + dayLeft);
+  } else {
+    // use variable
+    setSavings(dayLeft + leftdayTwo + leftdayThree + leftdayFour + leftdayFive + leftdaySix + leftdaySeven);
+    setDailyBudgetDayTwo(dailyBudget);
+  };
+}
   
 
 
