@@ -1,6 +1,5 @@
 import React,  { useState } from "react";
 import './App.css';
-import Fixcost from "./Fixcost.js";
 import Income from "./Income";
 import Payout from "./Payout";
 
