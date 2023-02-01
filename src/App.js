@@ -1,5 +1,10 @@
 import './App.css';
 import React, { useState } from 'react';
+import Fixcost from './Fixcost';
+import BackgroundWithLogo from './Loadingscreen';
+import Income from './Income';
+import Payout from './Payout';
+import Overview from './Overview';
 
 export default function App() {
   // Declare state variables for monthly salary and fixed costs
@@ -94,16 +99,23 @@ function calculateleftdayOne(){
     setLeftDaySeven(dailyBudget - spendingsDaySeven);
   }
 
-  /*const calculateSavings = () => {
-    if (leftdayOne > 0) {
-      setSavings(leftdayOne + leftdayTwo + leftdayThree + leftdayFour + leftdayFive + leftdaySix + leftdaySeven);
-    } 
-  }
-*/
+  
   
 
+
   return (
+    
     <div className="maindiv">
+      <BackgroundWithLogo/>
+      
+      <Fixcost />
+
+      <Income />
+
+      <Payout />
+
+      <Overview />
+
       <h1>Tagesgehalt Rechner</h1>
       <p>
         Monatliches Gehalt: €
