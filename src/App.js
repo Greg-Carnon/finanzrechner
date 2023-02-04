@@ -20,7 +20,12 @@ export default function App() {
   const [spendingsDaySeven, setSpendingsDaySeven] = useState(0);
   const [savings, setSavings] = useState(0);
 
+  // hier werden die state variablen aus den child components definiert
+  const [income, setIncome] = useState(0);
+  const [fixcosts, setFixedcosts] = useState(0);
   
+  console.log('income', income);
+  console.log('fixcosts', fixcosts);
 
   // Declare a state variable for the calculated budget
   const [budget, setBudget] = useState(0);
@@ -108,9 +113,9 @@ function calculateleftdayOne(){
     <div className="maindiv">
       <BackgroundWithLogo/>
       
-      <Fixcost />
+      <Fixcost fixcosts={fixcosts} changeFixcosts={newFixcosts => setFixedcosts(newFixcosts)} />
 
-      <Income />
+      <Income income={income} changeIncome={newIncome => setIncome(newIncome)} />
 
       <Payout />
 
