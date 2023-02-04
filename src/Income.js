@@ -1,17 +1,25 @@
-import React,  { useState } from "react";
+import React from "react";
+import PropTypes from 'prop-types'
 import './App.css';
 
-export default function Income() {
-    const [income, setIncome] = useState("");
-
+// Definition der props
+function Income({ income, changeIncome }) {
   return (
     <div>
         <h1>Wie hoch ist deine monatliches netto Gehalt?</h1>
         
-        <input className="inputfield" type="number" value={income} placeholder="z.B. 2.233,50€" onChange={e => setIncome(e.target.value)}></input>
+        <input className="inputfield" type="number" value={income} placeholder="z.B. 2.233,50€" onChange={e => {
+          changeIncome(Number(e.target.value))
+        }}></input>
     </div>
   )
 }
 
+// Definition der prop types, um Typ Vorschläge zu bekommen
+Income.propTypes = {
+  income: PropTypes.number,
+  changeIncome: PropTypes.func
+}
 
-
+// neuer Export wird benötigt
+export default Income
