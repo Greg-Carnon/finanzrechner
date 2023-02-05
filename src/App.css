@@ -1,22 +1,64 @@
+body {
+  background-color: #000000;
+
+}
+
 .App {
   text-align: center;
 }
 
 .maindiv {
-margin: 100px;
+margin: 0 auto;
+background-color: #000000;
+position: relative;
+padding: 20px;
+
 
 }
 
+h1 {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  padding: 30px;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.bigButton {
+  position: relative;
+  margin-left: 40%;
+  margin-top: 10%;
+  width: 200px;
+  height: 50px;
+  color: white;
+  background: #E6752E;
+  border: 1px solid #E6752E;
+  border-radius: 12px;
+  font-size: 15pt;
+}
 
 .inputfield {
   width: 30%;
   height: 56px;
   border-radius: 4px;
   border-color: #E6752E;
-  position: relative;
   background-color: rgba(255,255,255,0.3);
   transition: 0.3s all;
+  position: absolute;
+  left: 35%;
+
 }
+
+
 
 .inputfield::placeholder {
   color: #E6752E;
@@ -24,6 +66,7 @@ margin: 100px;
   text-align: center;
   font-family: "helvetica";
   font-weight: 600;
+  
 }
 
 
