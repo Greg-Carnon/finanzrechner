@@ -143,7 +143,7 @@ function calculateleftdayOne(){
          {dailyBudget.toLocaleString('de-DE', { maximumFractionDigits: 2 })} €
       </p>
 
-       {/*<button onClick={calculateSavings}>Sparen berechnen</button> <br></br>*/}
+       {/*<button onClick={calculateSavings}>Sparen berechnen</button> <br></br>
 {/*
       <p>
         Sparbetrag:  
@@ -219,4 +219,4 @@ function calculateleftdayOne(){
 }
 
 
-*/}
+*/

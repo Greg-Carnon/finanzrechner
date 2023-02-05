@@ -27,29 +27,3 @@ const handleSubmit = () => {
   export default Fixcost;
 
 
-/*  export default function Fixcost() {
-    const [fixcosts, setFixcosts] = useState("");
-
-    const handleClick = () => {
-        // Store the input value in state
-        setFixcosts(document.getElementById("numberInput").value);
-        };
-
-  return (
-    <div className="maindiv">
-        <h1>Wie hoch sind deine monatlichen Fixkosten?</h1>
-        
-        <input className="inputfield" type="number" id="numberInput" placeholder="z.B. 1.253,50€"></input>
-
-
-
-        
-
-        
-
-    </div>
-  )
-}
-
-*/
-
