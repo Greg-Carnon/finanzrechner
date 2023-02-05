@@ -3,7 +3,7 @@ import Start from './start';
 import Fixcost from "./Fixcost";
 import Income from "./income";
 import Payout from "./payout";
-import Overview from "./Overview";
+import Overview from "./overview";
 import Navbar from './Navigation';
 import { Routes, Route} from "react-router-dom";
 
@@ -24,9 +24,9 @@ function App() {
             <Routes>
                 <Route exact path="/" element={<Start />} />
                 <Route exact path="/fixcost" element={<Fixcost/>}/>
-                <Route exact path="/Income" element={<Income/>}/>
-                <Route exact path="/Payout" element={<Payout/>}/>
-                <Route exact path="/Overview" element={<Overview/>}/>
+                <Route exact path="/income" element={<Income/>}/>
+                <Route exact path="/payout" element={<Payout/>}/>
+                <Route exact path="/overview" element={<Overview/>}/>
             </Routes>
     </div>
    
