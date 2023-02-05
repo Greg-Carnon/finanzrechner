@@ -1,8 +1,8 @@
 import './App.css';
 import React from "react";
 import logo from "./logo_transparent.png"; 
-import { Link, Routes, Route} from "react-router-dom";
-import Fixcost from "./fixcost";
+import { Link } from "react-router-dom";
+
 
 const Start = () => {
   return (
