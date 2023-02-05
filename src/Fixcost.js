@@ -9,7 +9,7 @@ const Fixcost = (props) => {
 
 
 const handleSubmit = () => {
-    props.onSubmit(fixcosts);
+    
   };
 
     return (
