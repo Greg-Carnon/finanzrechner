@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 
 const Fixcost = () => {
-    const [fixcosts, setFixcosts] = useState("");
+    const [fixcosts] = useState("");
 
 
     return (

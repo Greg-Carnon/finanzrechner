@@ -6,10 +6,7 @@ import logo from "./logo_transparent.png";
 
 const Navbar = () => {
 
-    const openInNewTab = (url) => {
-        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
-        if (newWindow) newWindow.opener = null
-      }
+
 
     // to change burger classes
     const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
