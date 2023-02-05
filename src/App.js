@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Start from './start';
 import Fixcost from "./Fixcost";
-import Income from "./income";
+import Income from "./Income";
 import Payout from "./payout";
 import Overview from "./overview";
 import Navbar from './Navigation';
