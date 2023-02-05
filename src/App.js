@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Start from './start';
 import Fixcost from "./Fixcost";
 import Income from "./Income";
-import Payout from "./payout";
-import Overview from "./overview";
+import Payout from "./Payout";
+import Overview from "./Overview";
 import Navbar from './Navigation';
 import { Routes, Route} from "react-router-dom";
 
