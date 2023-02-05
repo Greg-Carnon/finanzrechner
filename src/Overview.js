@@ -2,16 +2,12 @@ import React,  { useState } from "react";
 import './App.css';
 import Income from "./income";
 import Payout from "./payout";
-import Fixcost from "./fixcost";
+
 
 
 export default function Overview() {
 
-    const [income, setIncome] = useState(0);
-    const [fixcosts, setFixedcosts] = useState(0);
 
-    console.log('income', income);
-    console.log('fixcosts', fixcosts);
 
   return (
     <div className="maindiv">
